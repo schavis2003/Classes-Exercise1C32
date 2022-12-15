@@ -15,12 +15,11 @@ namespace Classes
             //Console.WriteLine("Hello, World!");
 
 
-            Car myCar = new Car(makeInput, modelInput, yearInput);
-            {
-                myCar.Make = "GMC";
-                myCar.Model = "Denali";
-                myCar.Year = 2023;
-            }
+            Car myCar = new Car();
+            myCar.Year = 2001;
+            myCar.Make = "Chevy";
+            myCar.Model = "Impala";
+
 
             var mazda = new Car()
             {
@@ -29,13 +28,14 @@ namespace Classes
                 Year = 2023,
             };
 
-            var chevy = new Car($"Chevy, Impala, 2001");
+            var chevy = new Car("Chevy", "Impala", 2001);
 
-            var carLIst = new List<Car>() { myCar, mazda, chevy };
+            var carList = new List<Car>() { myCar, mazda, chevy };
 
-            foreach (string car in car)
+            foreach (var car in carList) // I think this is the problem.!!!!!!!
             {
-                Console.WriteLine($"{vehicle.Make} {vehicle.Model} {vehicle.Year}");
+                Console.WriteLine($"{car.Make} {car.Model} {car.Year}");
+                Console.WriteLine();
             }
 
 

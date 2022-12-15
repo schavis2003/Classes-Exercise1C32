@@ -18,10 +18,6 @@ namespace Classes
         {
         }
 
-        public Car(string v)
-        {
-            this.v = v;
-        }
 
         public Car(string makeInput, string modelInput, int yearInput)
         {
@@ -30,12 +26,6 @@ namespace Classes
             Year = yearInput;
         }
 
-        public Car(string makeInput, string modelInput, string yearInput)
-        {
-            this.makeInput = makeInput;
-            this.modelInput = modelInput;
-            this.yearInput = yearInput;
-        }
 
 
         //Create a Make property of type string that is public
